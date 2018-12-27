@@ -31,7 +31,9 @@ The code compiled in Ubuntu 16.04 LTS Operating System and with c99 compiler.
 Please run the code like this.
 
 // gcc -lrt -c copyFile.c
+
 // gcc 2015510052.o -lrt -o copyFile.out -lpthread
+
 // ./copyFile.out - - 5
 
 // To check with md5sum
