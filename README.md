@@ -32,7 +32,7 @@ Please run the code like this.
 
  gcc -lrt -c copyFile.c
 
- gcc 2015510052.o -lrt -o copyFile.out -lpthread
+ gcc copyFile.o -lrt -o copyFile.out -lpthread
 
  ./copyFile.out - - 5
 
@@ -47,4 +47,5 @@ To check with md5sum
 ///////OR////////
 
  md5sum source.txt destination.txt > myfiles.md5
+ 
  md5sum -c myfiles.md5
