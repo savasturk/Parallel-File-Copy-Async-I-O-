@@ -25,3 +25,20 @@ o 8 th thread should copy from source.txt to destination.txt last 2 bytes > hh
 Create threads (user will be able to define the number of threads from 1 to 10) for
 asynchronous I/O copy process (read + write).
 Finally, the source.txt file is the exact same content with the destination.txt file.
+
+The code compiled in Ubuntu 16.04 LTS Operating System and with c99 compiler.
+
+Please run the code like this.
+
+// gcc -lrt -c copyFile.c
+// gcc 2015510052.o -lrt -o copyFile.out -lpthread
+// ./copyFile.out - - 5
+
+// To check with md5sum
+//**************************
+// md5sum source.txt > md1.md5
+// md5sum destination.txt > md2.md5
+// md5sum -c md1.md5 md2.md5
+///////OR////////
+// md5sum source.txt destination.txt > myfiles.md5
+// md5sum -c myfiles.md5
