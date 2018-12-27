@@ -30,17 +30,21 @@ The code compiled in Ubuntu 16.04 LTS Operating System and with c99 compiler.
 
 Please run the code like this.
 
-// gcc -lrt -c copyFile.c
+ gcc -lrt -c copyFile.c
 
-// gcc 2015510052.o -lrt -o copyFile.out -lpthread
+ gcc 2015510052.o -lrt -o copyFile.out -lpthread
 
-// ./copyFile.out - - 5
+ ./copyFile.out - - 5
 
-// To check with md5sum
-//**************************
-// md5sum source.txt > md1.md5
-// md5sum destination.txt > md2.md5
-// md5sum -c md1.md5 md2.md5
+To check with md5sum
+
+ md5sum source.txt > md1.md5
+
+ md5sum destination.txt > md2.md5
+
+ md5sum -c md1.md5 md2.md5
+
 ///////OR////////
-// md5sum source.txt destination.txt > myfiles.md5
-// md5sum -c myfiles.md5
+
+ md5sum source.txt destination.txt > myfiles.md5
+ md5sum -c myfiles.md5
